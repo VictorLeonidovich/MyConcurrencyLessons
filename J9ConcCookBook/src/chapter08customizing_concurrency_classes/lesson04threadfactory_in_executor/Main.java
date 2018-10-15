@@ -1,0 +1,19 @@
+package chapter08customizing_concurrency_classes.lesson04threadfactory_in_executor;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+public class Main {
+
+	public static void main(String[] args) throws InterruptedException {
+		MyThreadFactory threadFactory = new MyThreadFactory("MyThreadFactory");
+		ExecutorService executor = Executors.newCachedThreadPool(threadFactory);
+		MyTask task = new MyTask();
+		executor.submit(task);
+		executor.shutdown();
+		executor.awaitTermination(1, TimeUnit.MINUTES);
+		System.out.println("Main: End of the program.");
+	}
+
+}

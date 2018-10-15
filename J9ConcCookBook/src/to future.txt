@@ -1,0 +1,8 @@
+chapter03lesson06 - It's needs to think more about CompletableFuture
+chapter04lesson09 - It's needs to think more about CompletionService
+chapter05lesson03 - It's needs to repair - java.lang.NullPointerException -- ?private List<String> getResultList()
+chapter06lesson09 - Java9
+chapter07lesson02 - I don't understand all example, collection principle
+chapter07lesson06 - It is difficult to understand example.
+chapter07lesson10 - Java9
+chapter08lesson05 - It is difficult to understand example.
